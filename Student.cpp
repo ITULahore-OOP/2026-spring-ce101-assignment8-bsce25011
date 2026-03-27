@@ -1,0 +1,13 @@
+#include "Student.h"
+Student::Student(string name, int memberID, double cgpa): UniversityMember(name,memberID) {
+    this->cgpa = cgpa;
+}
+double Student::getCGPA() const {
+    return cgpa;
+}
+void Student::updateCGPA(double newCGPA) {
+    cgpa = newCGPA;
+}
+void Student::displayRole() {
+    cout << "Role: Student" << endl;
+}
